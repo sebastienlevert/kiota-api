@@ -18,6 +18,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/postList'
+  /users:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/userList'
+
 components:
   schemas:
     postList:
@@ -38,4 +48,21 @@ components:
           type: string
         body:
           type: string
-
+    userList:
+      type: object
+      properties:
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/user'
+    user:
+      type: object
+      properties:
+        id: 
+          type: integer
+        name: 
+          type: string
+        username:
+          type: string
+        email: 
+          type: string
