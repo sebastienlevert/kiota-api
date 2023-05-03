@@ -1,0 +1,22 @@
+{
+  "name": "Sébastien Levert Blog Post API",
+  "description": "This repository contains the OpenAPI definitions for a default Blogs API.",
+  "tags": [
+      "sebastienlevert",
+      "blog",
+      "placeholder"
+  ],
+  "apis": [
+      {
+          "name": "Blogs API",
+          "description": "A simple blogs API to drive Kiota demos",
+          "baseUrl": "http://my-json-server.typicode.com/sebastienlevert/kiota-api",
+          "properties": [
+              {
+                  "type": "x-openapi",
+                  "url": "openapi.yaml" // can be the relative path on the repository or a publicly accessible URL
+              }
+          ]
+      }
+  ]
+}
